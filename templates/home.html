@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Monitoring tool</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="{{url_for('static',filename='css/all.min.css')}}">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="{{url_for('static',filename='css/adminlte.min.css')}}">
+</head>
+<body class="hold-transition sidebar-mini">
+<div style="width: 100%;">
+
+  <!-- Content Wrapper. Contains page content -->
+  <div >
+
+    <!-- Main content -->
+    <section class="content" style="width: 100%;">
+      <div class="container-fluid">
+        <h5 class="mb-2">Ports</h5>
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-12">
+            <div class="info-box">
+              <span id="p80" class="info-box-icon bg-danger"><i class="fa fa-globe"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">SWITCH</span>
+                <span class="info-box-number">Port : 6004</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+          <div class="col-md-3 col-sm-6 col-12">
+            <div class="info-box">
+              <span id="p3306" class="info-box-icon bg-danger"><i class="fa fa-database"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">BRIDGE</span>
+                <span class="info-box-number">Port : 2104 & 2108</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+          <div class="col-md-3 col-sm-6 col-12">
+            <div class="info-box">
+              <span id="p21" class="info-box-icon bg-danger"><i class="fa fa-folder"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">LIQUID TELECOM-</span>
+                <span class="info-box-number">IP : 172.51.25.1</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+          <div class="col-md-3 col-sm-6 col-12">
+            <div class="info-box">
+              <span id="p443" class="info-box-icon bg-danger"><i class="fa fa-lock"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">127.0.0.1</span>
+                <span class="info-box-number">Port : 443</span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+
+      
+        <!-- =========================================================== -->
+        <h5 class="mt-4 mb-2">Services (Windows servers)</h5>
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-12">
+            <div id="sDNS" class="info-box bg-gradient-danger">
+              <span class="info-box-icon"><i class="fa fa-search"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">DNS Client</span>
+                <span class="info-box-number">Win Service</span>
+
+                <div class="progress">
+                  <div class="progress-bar" style="width: 70%"></div>
+                </div>
+                <span class="progress-description">
+                  <!--70% Increase in 30 Days-->
+                </span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+          <div class="col-md-3 col-sm-6 col-12">
+            <div id="sOracle" class="info-box bg-gradient-danger">
+              <span class="info-box-icon"><i class="fa fa-database"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">Oracle Service</span>
+                <span class="info-box-number">DB Service</span>
+
+                <div class="progress">
+                  <div class="progress-bar" style="width: 70%"></div>
+                </div>
+                <span class="progress-description">
+                  
+                </span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+          <div class="col-md-3 col-sm-6 col-12">
+            <div id="sFPSERVICE" class="info-box bg-gradient-danger">
+              <span class="info-box-icon"><i class="fa fa-fingerprint"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">Fingerprint Svc</span>
+                <span class="info-box-number">Security</span>
+
+                <div class="progress">
+                  <div class="progress-bar" style="width: 70%"></div>
+                </div>
+                <span class="progress-description">
+                  
+                </span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+          <div class="col-md-3 col-sm-6 col-12">
+            <div id="sInstaller" class="info-box bg-gradient-danger">
+              <span class="info-box-icon"><i class="fa fa-download"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">Win Installer</span>
+                <span class="info-box-number">Service</span>
+
+                <div class="progress">
+                  <div class="progress-bar" style="width: 70%"></div>
+                </div>
+                <span class="progress-description">
+                  
+                </span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+
+  </div>
+  <!-- /.content-wrapper -->
+
+  <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+      <b>Version</b> 1.0.0
+    </div>
+    <strong>Copyright &copy; 2020 <a href="http://alcore-tech.com">Rodney M. Sentamu</a>.</strong> All rights
+    reserved.
+  </footer>
+
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
+<!-- Bootstrap 4 -->
+<script src="{{url_for('static',filename='js/bootstrap.bundle.min.js')}}"></script>
+<!-- AdminLTE App -->
+<script src="{{url_for('static',filename='js/adminlte.min.js')}}"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="{{url_for('static',filename='js/demo.js')}}"></script>
+<!--Ajax for ports-->
+<script>
+  $(document).ready(function () {
+    var url="http://localhost:5000";
+    setInterval(function(){
+      port('localhost',80,'#p80');
+      port('localhost',3306,"#p3306");
+      port('localhost',21,"#p21");
+      port('localhost',443,"#p443");
+      service('M477-RM','Dnscache','#sDNS');
+      service('M477-RM','OracleServiceXE','#sOracle');
+      service('M477-RM','vcsFPService','#sFPSERVICE');
+      service('M477-RM','msiserver','#sInstaller');
+    },17000)
+    
+    function port(host,port,id){
+      $.ajax({
+        type: "get",
+        url: url+"/port",
+        data: {port:port,host:host},
+        dataType: "JSON",
+        success: function (response) {
+          if(response.success&&response.up){
+            $(id).removeClass("bg-danger");
+            $(id).addClass("bg-success");
+          }else{
+            $(id).removeClass("bg-danger");
+            $(id).addClass("bg-danger");
+          }
+        }
+      });
+    }
+
+    function service(server,service,id){
+      $.ajax({
+        type: "get",
+        url: url+"/svc",
+        data: {server:server,service:service},
+        dataType: "JSON",
+        success: function (response) {
+          if(response.success&&response.up){
+            $(id).removeClass("bg-gradient-danger");
+            $(id).addClass("bg-gradient-success");
+          }else{
+            $(id).removeClass("bg-gradient-danger");
+            $(id).addClass("bg-gradient-danger");
+          }
+        }
+      });
+    }
+  });
+</script>
+</body>
+</html>
